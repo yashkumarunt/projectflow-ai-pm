@@ -18,8 +18,7 @@ It converts a **backlog** into a **Kanban board** and a **capacity-aware sprint 
 ---
 
 ## 🚀 Live Demo
-> Add your public PartyRock link here once published  
-`[Demo link](https://partyrock.aws/u/YashKumar/E9mmmjXKi/ProjectFlow)`  
+[Demo link](https://partyrock.aws/u/YashKumar/E9mmmjXKi/ProjectFlow)`  
 
 ---
 
