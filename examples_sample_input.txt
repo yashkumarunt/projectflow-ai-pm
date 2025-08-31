@@ -1,0 +1,30 @@
+# Project Name
+ProjectFlow
+
+# Team Members
+Yash | Cloud Engineer | 4
+Sam | Backend | 4
+Riya | Frontend | 4
+
+# Backlog (Title | Priority(H/M/L) | Size(1-8) | Due(YYYY-MM-DD or none) | Assignee(optional))
+Setup repo & CI | H | 2 | 2025-09-03 | Yash
+Auth API endpoint | H | 5 | 2025-09-06 | Sam
+UI: Login page | M | 3 | 2025-09-05 | Riya
+Infrastructure: S3 bucket | M | 2 | none | Yash
+Bug: 500 on /tasks | H | 2 | 2025-09-02 | Sam
+Docs: README | L | 1 | none | Yash
+
+# Status Options
+To-Do, In-Progress, Blocked, Done
+
+# WIP Limits
+In-Progress: 3
+
+# Sprint Window
+Start 2025-09-01 | End 2025-09-07
+
+# Timezone
+America/Chicago
+
+# Scheduling Goal
+Finish High priority first; keep WIP under limit; avoid context switching

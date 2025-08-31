@@ -1,0 +1,49 @@
+{
+  "project": "ProjectFlow",
+  "timezone": "America/Chicago",
+  "columns": ["To-Do", "In-Progress", "Blocked", "Done"],
+  "wip_limits": {"In-Progress": 3},
+  "sprint_window": {"start": "2025-09-01", "end": "2025-09-07"},
+  "team": [
+    {"name": "Yash", "role": "Cloud Engineer", "daily_capacity_hours": 4},
+    {"name": "Sam", "role": "Backend", "daily_capacity_hours": 4},
+    {"name": "Riya", "role": "Frontend", "daily_capacity_hours": 4}
+  ],
+  "tasks": [
+    {"id": "T-001", "title": "Setup repo & CI", "priority": "H", "size": 2, "due": "2025-09-03", "assignee": "Yash", "status": "Done", "tags": [], "notes": "Initialized pipeline"},
+    {"id": "T-002", "title": "Auth API endpoint", "priority": "H", "size": 5, "due": "2025-09-06", "assignee": "Sam", "status": "In-Progress", "tags": ["backend"], "notes": ""},
+    {"id": "T-003", "title": "UI: Login page", "priority": "M", "size": 3, "due": "2025-09-05", "assignee": "Riya", "status": "To-Do", "tags": ["frontend"], "notes": ""},
+    {"id": "T-004", "title": "Infrastructure: S3 bucket", "priority": "M", "size": 2, "due": null, "assignee": "Yash", "status": "To-Do", "tags": ["cloud"], "notes": ""},
+    {"id": "T-005", "title": "Bug: 500 on /tasks", "priority": "H", "size": 2, "due": "2025-09-02", "assignee": "Sam", "status": "In-Progress", "tags": ["bugfix"], "notes": "Investigating logs"},
+    {"id": "T-006", "title": "Docs: README", "priority": "L", "size": 1, "due": null, "assignee": "Yash", "status": "To-Do", "tags": ["docs"], "notes": ""}
+  ],
+  "plan": [
+    {
+      "date": "2025-09-01",
+      "assignee": "Sam",
+      "blocks": [
+        {"start": "10:00", "end": "12:00", "task_id": "T-005", "notes": "Reproduce bug"},
+        {"start": "13:00", "end": "15:00", "task_id": "T-002", "notes": "Auth routes"}
+      ]
+    },
+    {
+      "date": "2025-09-01",
+      "assignee": "Yash",
+      "blocks": [
+        {"start": "10:00", "end": "12:00", "task_id": "T-004", "notes": "S3 bucket setup"}
+      ]
+    }
+  ],
+  "unscheduled": ["T-003", "T-006"],
+  "risks": [
+    "Deadline risk for T-005 (H) due 2025-09-02.",
+    "Capacity tight for Sam; consider pairing or splitting work."
+  ],
+  "next_actions": [
+    "Finish T-005 bugfix before noon tomorrow.",
+    "Continue T-002 Auth API coverage and tests.",
+    "Kick off T-004 S3 infra after standup.",
+    "Move T-003 UI to In-Progress once API stabilizes.",
+    "Schedule docs (T-006) as filler task."
+  ]
+}
